@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+<!--        <tittle>BAW Portfolio </tittle>  -->
+        <meta id="meta" name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow" rel="stylesheet">
+        <link  rel="stylesheet" text="css" href="styles.css">
+        <link  rel="shortcut icon" text="image/x-icon" href="favicon.ico">
+        <style>
+          .container{width: 80%;margin: 30px auto;padding: 0;}
+      		.container:nth-child(even){background:whitesmoke}
+      		.container:nth-child(odd){background:#fff}
+      		#box-container{margin:0;padding:0}
+      		.box{list-style-type:none;float:left;margin-bottom:1rem;margin-right: 1%;width:48%}
+      		.box:nth-child(2n+0){margin-right:0}
+      		.box a{display:block;width:100%;height:auto}
+      		.box a img{-webkit-back-visibility:hidden;display:block;width:96%;height:auto;vertical-align:bottom}
+        </style>
+        <link rel="stylesheet" type="text/css" href="css/normalize.css" />
+	      <link rel="stylesheet" href="css/swipebox.css">
+</head>
+<body>
+     <div class="wrapper">
+       <div class="logo">
+         <a href="index.html"><img src="photos/logo.jpg" alt="logo"></a>
+       </div>
+       <div class="nav">
+         <ul>
+           <a href="index.html">
+             <li>Video</li>
+           </a>
+           <a href="works.html" class="selected">
+             <li>Works</li>
+           </a>
+           <a href="cv.html">
+             <li>CV</li>
+           </a>
+           <a href="exhibition.html">
+             <li>Exhibitions</li>
+           </a>
+           <a href="contact.html">
+             <li>Contact</li>
+           </a>
+         </ul>
+       </div>
+       <div class="container">
+       </div>
+       <div class="clear"></div>
+       <div class="controller">
+         <a href="" id="left"><</a>&nbsp; <a href="" id="right">></a>
+       </div>
+       <div class="comment">
+       </div>
+     </div>
+     <script src = "config.js"></script>
+     <script src = "script.js"></script>
+     <script src="js/ios-orientationchange-fix.js"></script>
+	   <script src="js/jquery.min.js"></script>
+	   <script src="js/jquery.swipebox.js"></script>
+	   <script type="text/javascript">
+  	 $( document ).ready(function() {
+  			/* Basic Gallery */
+  			$( '.swipebox' ).swipebox();
+  			/* Video */
+  			$( '.swipebox-video' ).swipebox();
+        });
+  	 </script>
+</body>
+</html>

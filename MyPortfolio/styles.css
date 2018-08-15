@@ -1,0 +1,128 @@
+/*Styles for BAW portfolio*/
+html,
+body
+{
+    height: 0;padding: 0;
+    font-family: "PT Sans Narrow";
+    width: 100%;
+}
+ul
+{
+    list-style: none;
+}
+a
+{
+    text-decoration: none;
+
+    color: inherit;
+}
+.clear
+{
+  clear:both;
+}
+.wrapper{
+  width: 900px;
+  margin: 0 auto;
+  margin-top: 120px;
+  font-size: 1.0em;
+}
+.logo img
+{
+  width: 100%;
+  height: auto;
+}
+
+.logo
+{
+  width: 100px;
+  padding-left: 15px;
+}
+.nav>ul a
+{
+  float: left;
+  text-align: center;
+  transition: .3s;
+}
+.selected
+{
+  border: 1px #000 solid;
+  border-radius: 2px;
+  font-weight: bold;
+}
+.nav>ul a:hover
+{
+  border: 1px #000 solid;
+  border-radius: 2px;
+  font-weight: bold;
+}
+.nav>ul li{
+  padding: 0 15px;
+  line-height: 30px;
+}
+.nav:after
+{
+  content: "";
+  font-size: 0;
+  width: 0;
+  height: 0;
+  display: block;
+  clear: both;
+}
+.container{
+  max-width: 100%;
+  height: auto;
+  margin-top: 40px;
+}
+h1{
+font-size:1.5em;
+}
+.container video{
+  width: 100%;
+}
+.imgbox img
+{
+  width: 560px;max-width: 100%;
+}
+.imgbox p
+{
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+.comment{
+  margin-top: 40px;
+  margin-bottom: 50px;
+}
+.controller
+{
+  margin-top: 40px;
+  font-size: 32px;
+}
+.controller a:hover
+{
+  font-weight: bold;
+}
+/**ipad**/
+@media only screen and (max-width: 1024px)
+{
+  .wrapper{
+    width: 870px;
+    margin: 0 auto;
+    margin-top: 100px;
+  }
+  html{
+    font-size: 1.1rem;
+  }
+
+}
+/**phone**/
+@media only screen and (max-width:768px)
+{
+  .wrapper{
+    width: 620px;
+    margin: 0 auto;
+    margin-top: 50px;
+  }
+  html{
+    font-size: 1.2rem;
+  }
+}
